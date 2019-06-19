@@ -19,6 +19,7 @@ class String
 
   def count_sentences
     self.split.reject &:empty?.count
+    # this is what i was trying to do originally
   end
   
 end
