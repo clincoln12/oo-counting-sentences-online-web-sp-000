@@ -18,11 +18,7 @@ class String
   end
 
   def count_sentences
-    self.split(/[.!?]/).reject {|x| x.empty?}.count
-    
-  end
-  
-  def count_sentences
     self.split.reject &:empty?.count
   end
+  
 end
