@@ -18,7 +18,7 @@ class String
   end
 
   def count_sentences
-    self.split.reject &:empty?.count
+    self.split.reject(&:empty?).count
     # this is what i was trying to do originally
   end
   
